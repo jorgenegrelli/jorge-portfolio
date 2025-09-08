@@ -1,0 +1,91 @@
+import { NextSeo } from 'next-seo';
+import { getPageSEO } from '@/lib/seo';
+
+export const metadata = {
+  title: 'Minha Jornada como Desenvolvedor Full Stack',
+  description: 'Reflexões sobre desenvolvimento, empreendedorismo e a jornada de criar soluções digitais para pequenos negócios.',
+  publishedAt: '2024-01-15',
+  author: 'Jorge Negrelli',
+};
+
+<NextSeo {...getPageSEO(metadata.title, metadata.description, '/blog/primeiro-post')} />
+
+<div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div className="max-w-3xl mx-auto">
+    <article className="prose prose-lg max-w-none dark:prose-invert">
+      
+      <div className="mb-12 text-center">
+        <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+          Reflexão
+        </span>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          {metadata.title}
+        </h1>
+        <div className="flex items-center justify-center text-muted-foreground text-sm">
+          <time dateTime={metadata.publishedAt}>15 de Janeiro, 2024</time>
+          <span className="mx-3">•</span>
+          <span>5 min de leitura</span>
+          <span className="mx-3">•</span>
+          <span>Por {metadata.author}</span>
+        </div>
+      </div>
+
+      ## Por que este blog existe?
+
+      Olá! Se você chegou até aqui, provavelmente está interessado em conhecer um pouco mais sobre minha trajetória como desenvolvedor. Este é meu primeiro post e quero compartilhar algumas reflexões sobre esta jornada.
+
+      ## A intersecção entre código e negócios
+
+      Uma das coisas mais interessantes da minha experiência é poder ver o desenvolvimento de software através da lente do **empreendedorismo**. Como proprietário do Super Negrelli, tenho uma perspectiva única sobre como a tecnologia pode realmente impactar um negócio.
+
+      Não é apenas sobre escrever código bonito (embora isso seja importante!), mas sobre:
+
+      - Resolver problemas reais
+      - Otimizar processos que custam tempo e dinheiro
+      - Criar soluções que as pessoas realmente usam
+
+      ## Tecnologias que me movem
+
+      Atualmente, minha stack favorita inclui:
+
+      ```javascript
+      const minhaStack = {
+        backend: ['Java', 'Spring Boot', 'Node.js'],
+        frontend: ['React', 'Next.js', 'TypeScript'],
+        database: ['MySQL', 'PostgreSQL'],
+        tools: ['Git', 'Docker', 'VS Code']
+      };
+      ```
+
+      Mas tecnologia é só ferramenta. O que realmente importa é **como** usamos essas ferramentas para criar valor.
+
+      ## Pequenos negócios, grandes desafios
+
+      Trabalhando com pequenos comércios, aprendi que eles têm necessidades muito específicas:
+
+      1. **Orçamento limitado** - Cada investimento precisa trazer retorno claro
+      2. **Simplicidade** - Soluções complexas não funcionam no dia a dia corrido
+      3. **Suporte próximo** - Eles precisam de alguém que entenda o negócio
+
+      > "A melhor tecnologia é aquela que resolve problemas reais e é fácil de usar no dia a dia."
+
+      ## O que vem por aí
+
+      Neste blog, pretendo compartilhar:
+
+      - **Tutoriais práticos** sobre desenvolvimento web
+      - **Case studies** dos meus projetos
+      - **Reflexões** sobre empreendedorismo e tecnologia
+      - **Dicas** para quem está começando no desenvolvimento
+
+      ## Vamos conversar?
+
+      Se você tem alguma pergunta, sugestão ou simplesmente quer trocar uma ideia sobre desenvolvimento, não hesite em entrar em contato. Adoro conversar com outros desenvolvedores e empreendedores!
+
+      ---
+
+      **Próximo post:** "Como implementei um sistema de gestão do zero para meu comércio"
+
+    </article>
+  </div>
+</div>
